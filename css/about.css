@@ -1,0 +1,61 @@
+/* Import a nice font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;600&display=swap');
+
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8; /* Light background for a clean look */
+}
+
+h1, p {
+  text-align: center; /* Center the text */
+  font-size: 1.5em; /* Set a larger font size for paragraphs */
+  color: #333; /* Dark text for readability */
+  line-height: 1.6; /* Spacing between lines */
+}
+
+p {
+  margin-top: 20px; /* Add spacing above the paragraph */
+  font-size: 1.2em; /* Slightly smaller than the heading */
+  max-width: 800px; /* Limit paragraph width for better readability */
+  margin-left: auto;
+  margin-right: auto;
+  padding: 20px; /* Add padding for breathing room */
+}
+
+footer p {
+  font-size: 0.8em; /* Make the footer text smaller */
+  color: #999; /* Light color for footer text */
+}
+
+nav h1 a {
+  font-size: 2.5em; /* Large title size */
+  font-weight: 600; /* Bold */
+  color: #ff6347; /* Tomato color for a lively look */
+  text-decoration: none;
+}
+
+.top-bar-section ul li a {
+  font-size: 1.1em; /* Make navigation text slightly bigger */
+  color: #555; /* Subtle color for links */
+}
+
+.top-bar-section ul li.active a {
+  color: #ff6347; /* Active link color matches the title */
+}
+
+/* Center content in the row */
+.row {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 80vh;
+}
+
+/* Additional styling for a modern look */
+.row p {
+  background-color: white;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 8px;
+}
