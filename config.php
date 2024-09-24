@@ -7,8 +7,9 @@ $database = "CONVO"; // your database name
 // Create connection
 $mysqli = new mysqli($servername, $username, $password, $database);
 
-// Check connection
 if ($mysqli->connect_error) {
     die("Connection failed: " . $mysqli->connect_error);
+} else {
+    echo "Connected successfully"; // This will display if the connection is successful
 }
-?>
+
