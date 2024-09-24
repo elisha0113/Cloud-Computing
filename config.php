@@ -1,15 +1,14 @@
 <?php
-$currency = '₹';
-$db_username = 'root';
-$db_password = '1234'; // Use the password you set
-$db_name = 'CONVO';
-$db_host = 'localhost';
+$servername = "localhost"; // or your database server IP
+$username = "your_username"; // your database username
+$password = "your_password"; // your database password
+$database = "your_database"; // your database name
 
-// Establish connection
-$conn = new mysqli($db_host, $db_username, $db_password, $db_name);
+// Create connection
+$mysqli = new mysqli($servername, $username, $password, $database);
 
-// Check for connection errors
-if ($conn->connect_error) {
-    die("Connection failed: " . $conn->connect_error); // Corrected here
+// Check connection
+if ($mysqli->connect_error) {
+    die("Connection failed: " . $mysqli->connect_error);
 }
 ?>
